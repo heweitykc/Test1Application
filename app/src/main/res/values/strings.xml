@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Test1Application</string>
+    <string name="title_home">音频管理</string>
+    <string name="title_dashboard">云文件</string>
+    <string name="title_notifications">个人中心</string>
+</resources>
