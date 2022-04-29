@@ -3,4 +3,6 @@
     <string name="title_home">音频管理</string>
     <string name="title_dashboard">云文件</string>
     <string name="title_notifications">个人中心</string>
+    <string name="btn_start">start</string>
+    <string name="btn_stop">stop</string>
 </resources>
