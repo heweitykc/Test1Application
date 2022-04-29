@@ -52,8 +52,7 @@ public class MyChronometer extends View implements LifecycleObserver {
         mExampleColor = a.getColor(
                 R.styleable.MyChronometer_exampleColor,
                 mExampleColor);
-        // Use getDimensionPixelSize or getDimensionPixelOffset when dealing with
-        // values that should fall on pixel boundaries.
+
         mExampleDimension = a.getDimension(
                 R.styleable.MyChronometer_exampleDimension,
                 mExampleDimension);
@@ -98,18 +97,18 @@ public class MyChronometer extends View implements LifecycleObserver {
         int contentWidth = getWidth() - paddingLeft - paddingRight;
         int contentHeight = getHeight() - paddingTop - paddingBottom;
 
-        // Draw the text.
-        canvas.drawText(mExampleString,
-                paddingLeft + (contentWidth - mTextWidth) / 2,
-                paddingTop + (contentHeight + mTextHeight) / 2,
-                mTextPaint);
-
         // Draw the example drawable on top of the text.
         if (mExampleDrawable != null) {
             mExampleDrawable.setBounds(paddingLeft, paddingTop,
                     paddingLeft + contentWidth, paddingTop + contentHeight);
             mExampleDrawable.draw(canvas);
         }
+
+        // Draw the text.
+        canvas.drawText(mExampleString,
+                paddingLeft + (contentWidth - mTextWidth) / 2,
+                paddingTop + (contentHeight + mTextHeight) / 2,
+                mTextPaint);
     }
 
     /**

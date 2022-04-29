@@ -4,24 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#E91E63"
+    android:background="#FFC107"
     tools:context=".Blank2Fragment">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="203dp"
         android:layout_height="174dp"
-        tools:src="@tools:sample/backgrounds/scenic" />
+        android:src="@drawable/cloud_sync_complete" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
 </FrameLayout>
